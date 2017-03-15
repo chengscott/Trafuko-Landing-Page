@@ -2616,7 +2616,7 @@ html.is-fixed {
         width:100%;
     }
     .video_thumb_wrap{
-        background:url('../img/top/mov-thumb-sp.jpg');
+        background:url('../img/top/bg.jpg');
         background-size:cover;
         height:100vh;
     }
