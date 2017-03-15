@@ -1576,7 +1576,7 @@ p.spcopyright {
         display: none;
     }
     .feature h2 span.title {
-        font-size: 2.9rem;
+        font-size: 3.1rem;
     }
     #header .mdd .container {
         padding-right: 20px;
@@ -2570,7 +2570,7 @@ html.is-fixed {
     }
     .video_thumb_txt_02 {
         margin-top: 20px;
-        font-size: 2.9rem;
+        font-size: 3.1rem;
     }
     .video_thumb_txt_03 {
         margin-top: 10px;
@@ -2616,7 +2616,7 @@ html.is-fixed {
         width:100%;
     }
     .video_thumb_wrap{
-        background:url('../img/top/bg.jpg');
+        background:url('../img/top/mov-thumb-sp.jpg');
         background-size:cover;
         height:100vh;
     }

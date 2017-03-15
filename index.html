@@ -22,14 +22,18 @@
     <meta name="twitter:url" content="" />
     <!-- icon -->
     <link rel="icon" href="assets/img/General/favicon1.png">
+    <!-- JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script-trafuko.js"></script>
+    <!-- Typesquare -->
+    <script src="//typesquare.com/accessor/script/typesquare.js?3OQ1nP409rE%3D" charset="utf-8"></script>
     <!-- CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-add.css" rel="stylesheet">
     <link href="assets/css/style-trafuko.css" rel="stylesheet">
     <link href="assets/css/style-trafuko-20170224.css" rel="stylesheet">
     <link href="assets/css/style-trafuko-extend.css" rel="stylesheet">
-
-
     <!-- Web Fonts -->
     <!-- Fonts.com -->
     <style>
@@ -46,7 +50,7 @@
         src: url("assets/fonts/365d926e-03e5-4406-a883-fd0f9e462339.eot?#iefix") format("eot"), url("assets/fonts/043eef6e-81ef-483c-831c-7bfd6628554b.woff2") format("woff2"), url("assets/fonts/7b11912a-986d-462e-b88a-4a1758eb23f1.woff") format("woff"), url("assets/fonts/545a8d94-3389-418c-9b0a-bfc16d1f8285.ttf") format("truetype"), url("assets/fonts/f499fe08-3b8d-4033-a5cf-9089676d1ca5.svg#f499fe08-3b8d-4033-a5cf-9089676d1ca5") format("svg");
     }
     </style>
-   
+
 </head>
 
 <body id='home'>
@@ -68,8 +72,8 @@
     </header><!-- /Header -->
 
 
-  <link href="assets/css/style-trafuko-top.css" rel="stylesheet">
-  <script src="assets/js/script-trafuko-top.js"></script>
+    <link href="assets/css/style-trafuko-top.css" rel="stylesheet">
+    <script src="assets/js/script-trafuko-top.js"></script>
 
     <!-- Contents -->
     <div id="video_fade_wrap" class="video_fade_wrap video_in">
@@ -94,15 +98,13 @@
                         <p class="video_thumb_txt_01 gold">Features Vol.01</p>
                         <p class="video_thumb_txt_02">Trafuko</p>
                         <p class="video_thumb_txt_03">蔡孟宇、鄭余玄、張言鴻</p>
-
-                        <!--<a id="trigger_move_on" class="trigger_move_on" href="javascript:void(0);">
+                        <a id="trigger_move_on" class="trigger_move_on" href="javascript:void(0);">
                             <img src="assets/img/top/icon_play.png" width="49" alt="播放">
-                            
-                        </a>-->
-
+                        </a>
+                        <br>
                         <form id="signup-form" method="post" action="#">
-                            <input type="email" name="name" id="email" placeholder="Email Address">
-                            <input type="submit" value="I like the idea">
+                            <input type="email" name="name" id="email" placeholder="Email 信箱">
+                            <input type="submit" value="搶先訂閱">
                         </form>
                     </div>
                     <div class="video_thumb_over"></div>
@@ -124,9 +126,8 @@
                         <span class="break">一個講很多幹話的人，講很多幹話。</span>
                         <span class="break">中國報導，講幹話促使社會進步</span>
                         <span class="break">孔子曰:「人生因為幹話而美好」</span>
-                        <br><br><br><br><br><br>
                     </p>
-                   <!-- <p>
+                    <p>
                         <span class="break">そんな「GINZA SIX」が掲げるのは、“Life At Its Best”というキーワード。</span>
                         <span class="break">生み出すのは成熟社会が模索する次の価値、“New Luxury“です。</span>
                     </p>
@@ -138,10 +139,10 @@
                     <p>
                         <span class="break">その姿と答えを、日本へ、世界へとプレゼンテーションし続ける、特別な場でありたい。</span>
                         <span class="break">「GINZA SIX」の歴史が、もうすぐ、幕を開けます。</span>
-                    </p>-->
+                    </p>
                 </div>
                 <!-- SP -->
-                <!--<div class="intro-copy sp">
+                <div class="intro-copy sp">
                     <p>
                         <span class="break">2017年4月20日</span>
                         <span class="break">東京・銀座6丁目の中央通りに</span>
@@ -174,15 +175,15 @@
                         <br> 特別な場でありたい。
                         <br> 「GINZA SIX」の歴史が、
                         <br> もうすぐ、幕を開けます。
-                    </p>-->
-               <!-- </div>
+                    </p>
+                </div>
                 <h3>2017.07<span>今年夏天，隆重推出</span></h3>
                 <div class="link link_ms_01">
-                    <a class="button" href="/membership/preview_event/">
+                    <a class="button" href="#subscribe">
                         <span class="btn_arrow3">搶先訂閱！</span>
                     </a>
                 </div>
-            </div>-->
+            </div>
         </div><!-- /Intro -->
         <div class="plug-image"></div>
         <!-- Feature -->
@@ -190,15 +191,15 @@
             <div class="container">
                 <h2>
                     <span class="number">特色</span>
-                   <!-- <span class="title">GINZA SIXの立ち上げに<span>込められた想い</span></span>-->
-                    <span class="sub">THE THOUGHTS OF TRAFUKO</span>
+                    <span class="title">GINZA SIXの立ち上げに<span>込められた想い</span></span>
+                    <span class="sub">THE THOUGHTS OF GINZA SIX</span>
                 </h2>
                 <ul class="feature-list">
                     <li class="feature-list-cell">
                         <div class="text-block">
                             <p class="number">01</p>
                             <p class="title">休閒</p>
-                            <p class="discription">一日一幹話,健身又養脾</p>
+                            <p class="discription">一日一幹話，健身又養脾</p>
                         </div>
                         <div class="image-block">
                             <img src="assets/img/top/home-feature-1.jpg" alt="ARCHITECTURE">
@@ -229,10 +230,10 @@
                             <p class="number">04</p>
                             <p class="title">NOH THEATER</p>
                             <p class="discription">「給我一個槓桿,我可以撐起我的下巴」</p>
-                            <p class="name"><em>---城之內克也</em></p>
+                            <p class="name">城之內克也</p>
                         </div>
                         <div class="image-block">
-                            <img src="assets/img/Content/1-1.png" alt="NOR THEATER">
+                            <img src="assets/img/top/home-feature-4.jpg" alt="NOR THEATER">
                         </div>
                     </li>
                     <li class="feature-list-cell">
@@ -240,10 +241,10 @@
                             <p class="number">05</p>
                             <p class="title">ART</p>
                             <p class="discription">「垃圾不分藍綠」</p>
-                            <p class="name"><em>---無名氏</em></p>
+                            <p class="name">柯P</p>
                         </div>
                         <div class="image-block">
-                            <img src="assets/img/Content/2-1.png" alt="ART">
+                            <img src="assets/img/top/home-feature-5.jpg" alt="ART">
                         </div>
                     </li>
                     <li class="feature-list-cell">
@@ -251,11 +252,23 @@
                             <p class="number">06</p>
                             <p class="title">VISUAL IDENTITY</p>
                             <p class="discription">「我們應該取消大選，直接把總統大位交給我」</p>
-                            <p class="name"><em>---三普</em></p>
+                            <p class="name">三普</p>
                         </div>
                         <div class="image-block">
-                            <img src="assets/img/Content/3-1.png" alt="VISUAL IDENTITY">
+                            <img src="assets/img/top/home-feature-6.jpg" alt="VISUAL IDENTITY">
                         </div>
+                    </li>
+                    <li class="feature-list-cell">
+                        <div class="text-block">
+                            <p class="number">07</p>
+                            <p class="title">NOREN</p>
+                            <p class="discription">中央通</p>
+                            <p class="name narrow brandsname">CÉLINE, DIOR, FENDI, SAINT LAURENT,
+                                <br> VALENTINO, VAN CLEEF &amp; ARPELS</p>
+                            </div>
+                            <div class="image-block">
+                                <img src="assets/img/top/home-feature-7.jpg" alt="NOREN">
+                            </div>
                     </li>
                 </ul>
             </div>
@@ -263,19 +276,16 @@
         <div class="plug-image plug-image2"></div>
         <!-- Link -->
         <div class="section link" id="subscribe">
-            <!--
             <div class="container">
                 <div>
                     <h3>搶先訂閱！</h3>
                     <p>您獲得我們的最新消息，保證沒有垃圾郵件！</p>
-                    <p>
-                        <form action="subscribe.php" method="post">
-                            <input type="text" name="email" value="" placeholder="Email 信箱">
-                        </form>
-                    </p>
-                    <a class="button" href="">搶先訂閱！</a>
+                    <form id="signup-form" method="post" action="#">
+                        <input type="email" name="name" id="email" placeholder="Email 信箱">
+                        <input type="submit" value="搶先訂閱">
+                    </form>
                 </div>
-            </div>-->
+            </div>
         </div><!-- /Link -->
 
         <!--  Footer -->
@@ -283,13 +293,13 @@
             <div class="container">
                 <div class="l-foot-buttons">
                     <div class="buttons">
-                        <a href="tos/">Terms of service</a>
+                        <a href="tos.md" target="_blank">Terms of service</a>
                     </div>
                     <div class="buttons">
-                        <a href="personal_information/">Shared Use of Personal Information</a>
+                        <a href="personal_information.md" target="_blank">Shared Use of Personal Information</a>
                     </div>
                     <div class="buttons">
-                        <a href="privacy_policy/">Privacy policy</a>
+                        <a href="privacy_policy.md" target="_blank">Privacy policy</a>
                     </div>
                 </div>
                 <small>MIT. Trafuko</small>
@@ -299,7 +309,7 @@
     <!-- /Contents -->
     <script>
     $(function() {
-        $('a[href^=#]').click(function() {
+        $('a[href^=\\#]').click(function() {
             // scroll speed
             var speed = 600; // ms
             // href attr
@@ -316,12 +326,6 @@
         });
     });
     </script>
-    <!-- JS -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/script-trafuko.js"></script>
-    <!-- Typesquare -->
-    <script src="//typesquare.com/accessor/script/typesquare.js?3OQ1nP409rE%3D" charset="utf-8"></script>
 </body>
 
 </html>
