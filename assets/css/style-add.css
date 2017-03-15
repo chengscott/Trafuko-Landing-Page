@@ -1,0 +1,1081 @@
+@charset "UTF-8";
+
+/* PROJECTページ css追加
+========================================================================== */
+
+
+/* テキストサイズ・スタイル */
+
+.project h2 {
+    font-size: 2.5rem;
+    line-height: 1;
+    /*letter-spacing: .06em;*/
+    text-align: center;
+}
+
+.project p.sub-title {
+    display: block;
+    font-size: 1.4rem;
+    /*letter-spacing: .12em;*/
+    text-align: center;
+    line-height: 1;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    /*letter-spacing: .06em;*/
+    color: #a9894a;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.project h3.text-long {
+    font-size: 1.7rem;
+}
+
+.project p {
+    line-height: 1.8;
+}
+
+.en .project p {
+    line-height: 1.6;
+}
+
+.project .item-block p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.project p.category {
+    color: #a9894a;
+    line-height: 1.6;
+}
+
+.project .list-cell p.title {
+    font-size: 1.5rem;
+    border-bottom: 1px dotted #666;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+.note {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+
+/* 改行 */
+
+.project span.break::before {
+    content: "\A";
+    white-space: pre;
+}
+
+@media screen and (min-width: 1024px) {
+    .project h2 {
+        font-size: 4.7rem;
+        letter-spacing: .06em;
+    }
+    .project p.sub-title {
+        font-size: 2.2rem;
+        letter-spacing: .12em;
+    }
+    .project h3,
+    .project h3.text-long {
+        font-size: 2.8rem;
+    }
+    .project .item-block p {
+        font-size: 1.4rem;
+    }
+    .project p.category {
+        font-size: 2rem;
+        margin-bottom: 4px;
+    }
+    .project .list-cell p.category span {
+        font-size: 1.6rem;
+    }
+    .project .list-cell p.title {
+        font-size: 2rem;
+        line-height: 1.6;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    .note {
+        font-size: 1.4rem;
+    }
+    /* 改行 */
+    .project span.break::before {
+        content: initial;
+    }
+}
+
+
+/* margin, padding指定 */
+
+.section-inner {
+    margin-top: 50px;
+}
+
+.sub-title + .section-inner {
+    margin-top: 30px;
+}
+
+.project .list-cell + .list-cell {
+    margin-top: 25px;
+}
+
+.project .item-block {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.project .item-block + .item-block {
+    margin-top: -10px;
+}
+
+.project .main-img.sp-block {
+    /*margin-bottom: 10px;*/
+    margin-bottom: 20px;
+}
+
+.map-img + .note {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+    .section-inner {
+        margin-top: 80px;
+    }
+    .sub-title + .section-inner {
+        margin-top: 60px;
+    }
+    .project .list-cell + .list-cell {
+        margin-top: 70px;
+    }
+    .project h3 + .main-img {
+        margin-bottom: 40px;
+    }
+    .item-block + .main-img,
+    .item-block + .map-img {
+        margin-top: 20px;
+    }
+}
+
+
+/* 区切り線を入れるエリア */
+
+.border-row {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #a9894a;
+}
+
+.border-row:first-child .section-inner {
+    margin-top: 20px;
+}
+
+.border-row:first-child .section-inner h3 {
+    margin-bottom: 24px;
+}
+
+.border-row:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.border-row:last-child .item-block {
+    margin-bottom: 0;
+}
+
+.border-row + .border-row {
+    padding-top: 50px;
+}
+
+
+/* 多用途複合施設　説明 */
+
+.project .text-block,
+.project .image-block {
+    display: block;
+    width: 100%;
+    float: none;
+}
+
+.project .list-cell {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.project .list-cell:last-child {
+    margin-bottom: 0;
+}
+
+.project .list-cell img {
+    /*margin-top: 10px;*/
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .border-row {
+        padding-bottom: 80px;
+    }
+    .border-row + .border-row {
+        padding-top: 80px;
+    }
+    .project .list-cell .text-block {
+        width: 61.4%;
+        float: left;
+        padding-right: 40px;
+    }
+    .project .list-cell .image-block {
+        width: 38.6%;
+        float: right;
+    }
+    .project .list-cell:nth-child(even) .text-block {
+        float: right;
+        padding-left: 40px;
+        padding-right: 0;
+    }
+    .project .list-cell:nth-child(even) .image-block {
+        float: left;
+    }
+    .project .list-cell img {
+        margin-top: 0;
+    }
+}
+
+
+/* 人物紹介 */
+
+.person-cell {
+    margin-top: 20px;
+}
+
+.person-cell .image-block {
+    width: 36%;
+    max-width: 246px;
+    float: left;
+}
+
+.person-cell .text-block {
+    width: 64%;
+    float: left;
+    padding-left: 5%;
+}
+
+.person-cell .text-block p.name-en {
+    font-size: 1.1rem;
+}
+
+.person-cell .text-block p.description {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.person-cell span {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.project .person-cell .link {
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+    .person-cell {
+        margin-top: 40px;
+    }
+    .project .person-cell p.category,
+    .project .person-cell p.name-en {
+        display: inline-block;
+    }
+    .project .person-cell p.category {
+        margin-right: 10px;
+    }
+    .project .person-cell p.name-en {
+        font-size: 1.6rem;
+    }
+    .person-cell .text-block p.description {
+        font-size: 1.4rem;
+    }
+    .person-cell .image-block {
+        width: 24.6%;
+    }
+    .person-cell .text-block {
+        width: 490px;
+        padding-left: 40px;
+    }
+    .person-cell span {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+}
+
+
+/* GINZA SIXリテールマネジメント 株式会社概要 */
+
+.company-list {
+    margin-top: 15px;
+}
+
+.company-list .company-cell {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+}
+
+.company-list img + img {
+    margin-top: 10px;
+}
+
+.company-list .logo-jfr {
+    width: 60%;
+}
+
+.company-list .logo-mori {
+    width: 100%;
+}
+
+.company-list .logo-real-estait {
+    width: 50%;
+}
+
+.company-list .logo-sumitomo {
+    width: 60%;
+}
+
+.company-list .company {
+    color: #a9894a;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+    .company-list {
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .company-list .company-cell {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        width: 50%;
+        float: left;
+    }
+    .company-list .company-cell div {
+        height: 35px;
+    }
+    .company-list .company-cell:nth-child(odd) {
+        padding-right: 50px;
+    }
+    .company-list .company-cell:nth-child(even) {
+        padding-left: 50px;
+    }
+    .company-list img + img {
+        margin-top: 0;
+        margin-left: 15px;
+    }
+    .company-list .logo-jfr {
+        width: 170px;
+    }
+    .company-list .logo-mori {
+        width: 270px;
+        margin-top: 8px;
+    }
+    .company-list .logo-real-estait {
+        width: 150px;
+    }
+    .company-list .logo-sumitomo {
+        width: 180px;
+        margin-top: 8px;
+    }
+    .company-list .company {
+        color: #a9894a;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+}
+
+
+/* クリアフィックス */
+
+.project .list-cell::after,
+.project .person-cell::after,
+.company-list::after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+
+/* ボタン */
+
+.project .link {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.link a.button-small {
+    font-size: 1.1rem;
+    padding: 6px 12px;
+    background: #a9894a;
+    color: #fff;
+    display: inline-block;
+}
+
+
+/* スマホ表示 */
+
+.sp-block {
+    display: block;
+}
+
+
+/* PC表示 */
+
+.pc-block {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    /* ボタン */
+    .project .link {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .link a.button-small:link,
+    .link a.button-small:visited,
+    .link a.button-small:active {
+        font-size: 1.4rem;
+        padding: 9px 16px 6px;
+    }
+    .link a.button-small:hover {
+        /*opacity: 1;*/
+    }
+    /* スマホ表示 */
+    .sp-block {
+        display: none;
+    }
+    /* PC表示 */
+    .pc-block {
+        display: block;
+    }
+}
+
+
+/* 背景グレー　テーブルエリア */
+
+.project .item-block .item {
+    padding: 5px 15px;
+    background: #f4f4f4;
+}
+
+.project .item-block .note {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+/* テーブル */
+
+.project table {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.project table tr {
+    border-bottom: 1px dotted #fff;
+}
+
+.project .line-black table tr {
+    border-color: #fff;
+}
+
+.project table tr:last-child {
+    border-bottom: none;
+}
+
+.project table tr:last-child ul {
+    border-bottom: none;
+}
+
+.project table th,
+.project table td {
+    border: none;
+    display: block;
+}
+
+.project table .title {
+    padding-top: 10px;
+}
+
+.project table th {
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.project table td {
+    padding-bottom: 10px;
+}
+
+.project table .title:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    background: #a9894a;
+}
+
+.project table td ul {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-left: 12px;
+    padding-left: 8px;
+}
+
+.project table .list-indent td ul li:last-child {
+    padding-left: 16px;
+}
+
+.project table .list-indent td:last-child ul {
+    border-bottom: none;
+}
+
+.project table .list-style td {
+    padding-bottom: 0;
+}
+
+.project table .list-style ul {
+    text-indent: -8px;
+    padding-left: 10px;
+}
+
+.project table .list-style ul li:before {
+    content: '・';
+    display: inline-block;
+}
+
+.project table .list-style ul span {
+    display: inline-block;
+    line-height: 1.6;
+    text-indent: -12px;
+    padding-left: 12px;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .project table {
+        font-size: 1.4rem;
+    }
+    .project table th,
+    .project table td {
+        display: inline-block;
+        padding: 10px 0 8px;
+    }
+    .project table .title {
+        width: 35%;
+    }
+    .project table td {
+        width: 64%;
+    }
+    .project .line-black table tr {
+        border-color: #ddd;
+    }
+    .project .item-block .item {
+        padding: 14px 28px;
+    }
+    .project table .title:before {
+        margin-right: 6px;
+        position: relative;
+        /*top: -1px;*/
+    }
+    .project table .list-indent th,
+    .project table .list-indent td {
+        display: block;
+        padding-top: 0;
+    }
+    .project table .list-indent td {
+        width: initial;
+    }
+    .project table .list-indent td ul {
+        padding-bottom: 8px;
+        margin-left: 60px;
+    }
+    .project table .list-indent td ul li {
+        display: inline-block;
+    }
+    .project table .list-indent td ul li:first-child {
+        width: 31.5%;
+    }
+    .project table .list-indent td ul li:last-child {
+        padding-left: 0;
+    }
+    .project table td ul {
+        margin-left: 4px;
+    }
+    .project table .list-style ul span {
+        font-size: 1.3rem;
+        text-indent: -10px;
+    }
+}
+
+
+/* PRESSROOMページ css追加
+========================================================================== */
+
+
+/* ブロック指定 */
+
+.pressroom .item-block {
+    display: table;
+    margin: 0 auto;
+}
+
+
+/* ブロックマージン */
+
+.pressroom .item-block + .item-block {
+    margin-top: 50px;
+}
+
+
+/* ブロック内のマージン */
+
+.pressroom .item-block .item {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pressroom .item-block.contact .item + .item {
+    margin-top: 50px;
+}
+
+
+/* ブロックタイトル */
+
+.pressroom h2 {
+    /*  font-size: 1.7rem;
+  color: #a9894a;*/
+    text-align: center;
+}
+
+
+/* ブロック内　項目タイトル */
+
+.pressroom p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.pressroom .small {
+    margin-left: 5px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+
+/* ブロック内　PDFダウンロード */
+
+.pressroom a.download {
+    display: block;
+    font-size: 1.1rem;
+    /*font-family: sans-serif;*/
+    width: 50%;
+    margin: 8px auto;
+}
+
+
+/* ブロック内　テーブル */
+
+.pressroom table {
+    margin-top: 12px;
+    font-size: 1.2rem;
+}
+
+.pressroom table th,
+.pressroom table td {
+    border: none;
+    line-height: 24px;
+}
+
+.pressroom table th {
+    width: 60px;
+}
+
+
+/* PDFダウンロードアイコン */
+
+.download::after {
+    content: '';
+    display: inline-block;
+    background: url("../../assets/img/General/download.png") no-repeat;
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .pressroom .item-block {
+        max-width: 270px;
+        display: block;
+    }
+    /* ブロックマージン */
+    .pressroom .item-block + .item-block {
+        margin-top: 70px;
+    }
+    /* ブロック内　マージン */
+    .pressroom .item-block .item {
+        margin-top: 40px;
+    }
+    /* ブロックタイトル */
+    .pressroom h2 {
+        font-size: 2.8rem;
+        text-align: left;
+    }
+    /* ブロック内　項目タイトル */
+    .pressroom p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+    /* ブロック内　PDFダウンロード */
+    .pressroom a.download {
+        font-size: 1.4rem;
+        margin-top: 10px;
+    }
+    /* ブロック内　テーブル */
+    .pressroom table {
+        margin-top: 15px;
+        font-size: 1.4rem;
+    }
+    .pressroom table th,
+    .pressroom table td {
+        line-height: 28px;
+    }
+    .pressroom table th {
+        width: 65px;
+    }
+    /* PDFダウンロードアイコン */
+    .download::after {
+        background-size: 16px 16px;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: 2px;
+        left: 10px;
+    }
+}
+
+
+/* Base css追加
+========================================================================== */
+
+.small {
+    font-size: 1.3rem;
+}
+
+body .project,
+body .pressroom {
+    color: #333;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: inherit;
+    transition: opacity .4s ease;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+
+/* style.css　上書き
+========================================================================== */
+
+
+/* line 7, ../../scss/custom/_head_foot.scss */
+
+#header {
+    height: 50px;
+}
+
+
+/* line 47, ../../scss/custom/_head_foot.scss */
+
+#header .site-logo {
+    width: 90px;
+    height: 50px;
+}
+
+
+/* line 330, ../../scss/custom/_head_foot.scss */
+
+.sp-menu-trigger {
+    background-image: url("../img/header/sp-menu.svg") no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-right: -10px;
+}
+
+
+/* line 344, ../../scss/custom/_head_foot.scss */
+
+#sp-menu {
+    padding: 0 20px 20px;
+}
+
+#sp-menu .control {
+    height: 50px;
+    padding-top: 5px;
+}
+
+
+/* line 415, ../../scss/custom/_head_foot.scss */
+
+#sp-menu .control .close {
+    width: 28px;
+    height: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+    #header {
+        height: 75px;
+    }
+    #header .site-logo {
+        width: 165px;
+        height: 75px;
+        margin-right: 60px;
+    }
+    .sp-menu-trigger {
+        display: none;
+    }
+}
+
+
+/* FEATURESページ css追加
+========================================================================== */
+
+.detail-feature-list {
+    text-align: left;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    border-top: 1px solid #ddd;
+}
+
+.detail-feature-list .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    display: table;
+    width: initial;
+    padding-bottom: 25px;
+}
+
+.detail-feature-list .detail-volume {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.detail-feature-list .heading {
+    font-size: 1.4rem;
+    color: #a9894a;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.detail-feature-list .list-item a {
+    color: #000;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.detail-feature-list .list-item a:hover {
+    color: #a9894a;
+}
+
+.detail-feature-list .list-item .detail-thumbnail {
+    width: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.detail-feature-list .list-item .detail-text {
+    padding-left: 85px;
+}
+
+.detail-feature-list .list-item .detail-discription {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.detail-feature-list .list-item {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.detail-feature-list .list-item .detail-discription {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .detail-feature-list {
+        border-top: none;
+        padding-bottom: 50px;
+    }
+    .detail-feature-list .container {
+        /*padding-left: 30px; 
+    padding-right: 30px;*/
+    }
+    .detail-feature-list .detail-volume {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .detail-feature-list .heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .detail-feature-list .list-item .detail-thumbnail {
+        width: 118px;
+    }
+    .detail-feature-list .list-item .detail-text {
+        padding-left: 135px;
+    }
+}
+
+
+/* Base css追加
+========================================================================== */
+
+.small {
+    font-size: 1.3rem;
+}
+
+body .project,
+body .pressroom {
+    color: #333;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: inherit;
+    transition: opacity .4s ease;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+
+/* style.css　上書き
+========================================================================== */
+
+
+/* line 7, ../../scss/custom/_head_foot.scss */
+
+#header {
+    height: 50px;
+}
+
+
+/* line 47, ../../scss/custom/_head_foot.scss */
+
+#header .site-logo {
+    width: 90px;
+    height: 50px;
+}
+
+
+/* line 330, ../../scss/custom/_head_foot.scss */
+
+.sp-menu-trigger {
+    background-image: url("../img/header/sp-menu.svg") no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-right: -10px;
+}
+
+
+/* line 344, ../../scss/custom/_head_foot.scss */
+
+#sp-menu {
+    padding: 0 20px 20px;
+}
+
+#sp-menu .control {
+    height: 50px;
+    padding-top: 5px;
+}
+
+
+/* line 415, ../../scss/custom/_head_foot.scss */
+
+#sp-menu .control .close {
+    width: 28px;
+    height: 40px;
+}
+
+
+/* line 271, ../../scss/custom/_layout_home.scss */
+
+#splash .features-copy {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    animation: fadesplash-img 2.5s ease;
+}
+
+#splash .features-copy img {
+    width: 75%;
+    min-width: 320px;
+    max-width: 680px;
+}
+
+@media screen and (min-width: 1024px) {
+    #header {
+        height: 75px;
+    }
+    #header .site-logo {
+        width: 165px;
+        height: 75px;
+        margin-right: 40px;
+    }
+    .sp-menu-trigger {
+        display: none;
+    }
+}
+
+/*ADD 1213*/
+.video_wrap {
+  /*max-width: 1440px;
+  margin: 0 auto;*/
+  padding-top: 75px;
+}
+.section.movie {
+  padding-top: 0;
+}
+
+video {
+  width: 100%;
+}

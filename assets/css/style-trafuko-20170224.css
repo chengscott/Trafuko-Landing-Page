@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* ---------
+
+ add 2017.02.24  
+
+--------- */
+
+/* -----
+ header
+----- */
+.head_item_ms_tbl{
+    display:table;
+    height:75px;
+}
+.head_item_ms_tbl_cel{
+    display:table-cell;
+    vertical-align:middle;
+}
+.head_item_ms_link_01{
+    color:#000;
+    opacity:0.8;
+    font-size:1.3rem;
+}
+.head_item_ms_link_01 a{
+    text-decoration:underline;
+    font-size:1.3rem;
+}
+
+#sp-menu .sp-global-nav .sp_head_item_ms_link_01 a{
+    font-size:1.4rem;
+    font-weight:normal;
+    text-decoration: underline;
+    opacity:0.8;
+}
+
+.lang2{
+    margin-right:25px;
+}
+
+.btn_arrow,
+.btn_arrow2, 
+.btn_arrow3  {
+ position: relative !important;
+ display: inline-block;
+ padding: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ -webkit-transform:rotate(0deg);  /* arrowのずれ防止 */
+ transform:rotate(0deg);  /* arrowのずれ防止 */ }
+
+.btn_arrow::before,
+.btn_arrow::after,
+.btn_arrow2::before,
+.btn_arrow2::after,
+.btn_arrow3::before,
+.btn_arrow3::after {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ margin: auto;
+ content: "";
+ vertical-align: middle; }
+
+.btn_arrow::before {
+ right: -10px;
+ width: 4px;
+ height: 4px;
+ border-top: 1px solid #fff;
+ border-right: 1px solid #fff;
+ -webkit-transform: rotate(45deg);
+ transform: rotate(45deg); }
+
+.btn_arrow2::before {
+ right: -10px;
+ width: 4px;
+ height: 4px;
+ border-top: 1px solid #000;
+ border-right: 1px solid #000;
+ -webkit-transform: rotate(45deg);
+ transform: rotate(45deg); }
+
+.btn_arrow3::before {
+ right: -10px;
+ width: 4px;
+ height: 4px;
+ border-top: 1px solid #a9894a;
+ border-right: 1px solid #a9894a;
+ -webkit-transform: rotate(45deg);
+ transform: rotate(45deg); }
+
+
+.link_ms_01 a.button:link, .link_ms_01 a.button:visited, .link_ms_01 a.button:active{
+    width: 170px;
+    margin-top: 30px;
+    -webkit-transform:rotate(0deg);  /* arrowのずれ防止 */
+    transform:rotate(0deg);  /* arrowのずれ防止 */
+}
+
+.link_ms_01 a.button span{
+    left: -6px;
+}
+.link_ms_01 a.button span:before{
+    transition:all .3s ease;
+}
+
+.link_ms_01 a.button:hover span:before{
+    border-color:#fff;
+}
+
+@media screen and (min-width: 1024px) {
+    .link_ms_01 a.button:link, .link_ms_01 a.button:visited, .link_ms_01 a.button:active{
+        width: 200px;
+        padding: 15px;
+        margin-top: 45px;
+    }
+    .link_ms_01 a.button span{
+        font-size:1.5rem;
+    }
+}
