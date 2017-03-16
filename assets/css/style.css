@@ -527,22 +527,25 @@ table th, table td {
   height: 75px;
   padding: 30px 10px; }
 /* line 149, ../../scss/custom/_head_foot.scss */
+/*
 #header .global-nav > ul > li > a, #header .lang > ul > li > a {
   line-height: 1;
-  transition: color .2s ease; }
+  transition: color .2s ease; }*/
 /* line 154, ../../scss/custom/_head_foot.scss */
+/*
 #header .global-nav > ul > li > a:link, #header .global-nav > ul > li > a:visited, #header .global-nav > ul > li > a:active, #header .lang > ul > li > a:link, #header .lang > ul > li > a:visited, #header .lang > ul > li > a:active {
-  color: #000; }
+  color: #000; }*/
 /* line 159, ../../scss/custom/_head_foot.scss */
+/*
 #header .global-nav > ul > li > a.current:link, #header .global-nav > ul > li > a.current:visited, #header .global-nav > ul > li > a.current:active, #header .lang > ul > li > a.current:link, #header .lang > ul > li > a.current:visited, #header .lang > ul > li > a.current:active {
-  color: #a9894a; }
+  color: #a9894a; }*/
 /* line 164, ../../scss/custom/_head_foot.scss */
-#header .global-nav > ul > li > a:hover, #header .lang > ul > li > a:hover {
-  color: #a9894a; }
+/*#header .global-nav > ul > li > a:hover, #header .lang > ul > li > a:hover {
+  color: #a9894a; }*/
 /* line 168, ../../scss/custom/_head_foot.scss */
-#header .global-nav > ul > li > a span, #header .lang > ul > li > a span {
+/*#header .global-nav > ul > li > a span, #header .lang > ul > li > a span {
   font-weight:normal;
-  display: inline-block; }
+  display: inline-block; }*/
 
 /* line 176, ../../scss/custom/_head_foot.scss */
 #header .mdd {

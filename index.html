@@ -23,17 +23,25 @@
     <!-- icon -->
     <link rel="icon" href="assets/img/General/favicon1.png">
     <!-- JS -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+
     <script src="assets/js/script.js"></script>
     <script src="assets/js/script-trafuko.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/uikit.min.js"></script>
+   
     <!-- Typesquare -->
-    <script src="//typesquare.com/accessor/script/typesquare.js?3OQ1nP409rE%3D" charset="utf-8"></script>
+    <!--<script src="http://typesquare.com/accessor/script/typesquare.js?3OQ1nP409rE%3D" charset="utf-8"></script>-->
     <!-- CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-add.css" rel="stylesheet">
     <link href="assets/css/style-trafuko.css" rel="stylesheet">
     <link href="assets/css/style-trafuko-20170224.css" rel="stylesheet">
     <link href="assets/css/style-trafuko-extend.css" rel="stylesheet">
+   
+
     <!-- Web Fonts -->
     <!-- Fonts.com -->
     <style>
@@ -61,11 +69,10 @@
                 <a href="#"><img src="assets/img/header/logo.svg" alt="Trafuko"></a>
             </div>
             <div class="global-nav">
-                <ul>
-                    <li class="nav-item"><a href="#" class="current"><span>理念</span></a></li>
-                    <li class="nav-item"><a href="#features" class=""><span>特色</span></a></li>
-                    <!-- <li class="nav-item"><a href="#" class=""><span>DEMO</span></a></li> -->
-                    <li class="nav-item"><a href="#subscribe" class=""><span>搶先訂閱！</span></a></li>
+                <ul class="uk-nav uk-nav-side" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
+                    <li class="nav-item"><a href="#home" ><span>理念</span></a></li>
+                    <li class="nav-item"><a href="#features" ><span>特色</span></a></li>
+                    <li class="nav-item"><a href="#subscribe" ><span>搶先訂閱！</span></a></li>
                 </ul>
             </div>
         </div>
@@ -89,7 +96,7 @@
 
     <div id="contents" class="top">
         <!-- Key Visual -->
-        <div class="kv">
+        <div class="kv" id="#home">
 
         <!-- video -->
             <div class="video_wrap">
@@ -224,7 +231,7 @@
                     <li class="feature-list-cell">
                         <div class="text-block">
                             <p class="number">04</p>
-                            <p class="title">NOH THEATER</p>
+                            <p class="title">動漫崩壞</p>
                             <p class="discription">「給我一個槓桿,我可以撐起我的下巴」</p>
                             <p class="name">城之內克也</p>
                         </div>
