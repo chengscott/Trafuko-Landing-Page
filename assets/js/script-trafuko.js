@@ -100,7 +100,7 @@ $(function() {
                         {
                             width: '100%', // プレーヤーの幅
                             height: '100%', // プレーヤーの高さ
-                            videoId: 'XoK9D3pddRs', // YouTubeのID
+                            videoId: '6AM5jA7San8', // YouTubeのID
                             events: {
                               'onReady': onPlayerReady
                             },
@@ -115,7 +115,7 @@ $(function() {
                         {
                             width: '100%', // プレーヤーの幅
                             height: '100%',
-                            videoId: 'oZ88hgcftH0', // YouTubeのID
+                            videoId: '6AM5jA7San8', // YouTubeのID
                             events: {
                               'onReady': onPlayerReady
                             },
