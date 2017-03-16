@@ -41,7 +41,7 @@
 .btn_arrow,
 .btn_arrow2, 
 .btn_arrow3  {
- position: relative !important;
+ /*position: relative !important;*/
  display: inline-block;
  padding: 0;
  vertical-align: middle;

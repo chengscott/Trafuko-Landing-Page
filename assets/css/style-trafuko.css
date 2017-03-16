@@ -2616,7 +2616,7 @@ html.is-fixed {
         width:100%;
     }
     .video_thumb_wrap{
-        background:url('../img/top/mov-thumb-sp.jpg');
+        background:url('../img/General/sp_bg.jpg');
         background-size:cover;
         height:100vh;
     }
@@ -2625,6 +2625,6 @@ html.is-fixed {
 @media screen and (max-width: 1240px){
     #header .global-nav ul li.nav-item a{
         padding:30px 7px;
-        font-size:1.3rem;
+        /*font-size:1.3rem;
     }
 }
